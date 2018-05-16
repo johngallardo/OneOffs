@@ -1,0 +1,13 @@
+namespace NativeRuntimeEventSource
+{
+    [default_interface]
+    runtimeclass Timer
+    {
+        Timer(Int32 tick);
+        Int32 Tick{ get; };
+
+        void Start();
+
+        event Windows.Foundation.TypedEventHandler<Timer, Object> Ticked;
+    }
+}
