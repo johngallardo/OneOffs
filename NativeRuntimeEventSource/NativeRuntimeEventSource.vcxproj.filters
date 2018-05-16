@@ -15,10 +15,12 @@
       <Filter>Generated Files</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="ThreadpoolTimer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="ThreadpoolTimer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NativeRuntimeEventSource.def" />

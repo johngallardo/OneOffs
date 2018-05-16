@@ -8,4 +8,7 @@
 #define NOMINMAX
 
 #include "winrt/Windows.Foundation.h"
+#include <memory>
+#include <algorithm>
+#include <chrono>
 #include <windows.h>
