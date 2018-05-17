@@ -2,6 +2,8 @@
 
 #include "Person.g.h"
 
+#include <ppl.h>
+
 namespace winrt::NativeRuntimeEventSource::implementation
 {
     struct Person : PersonT<Person>
