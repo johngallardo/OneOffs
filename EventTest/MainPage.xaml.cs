@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 using NativeRuntimeEventSource;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -50,6 +52,15 @@ namespace EventTest
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             GC.Collect();
+        }
+
+        private async void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var doodad = new AsyncDooDad();
+            await Task.Run( async () => {
+                var person = await doodad.GetPersonAsync("John", "Gallardo");
+                Debug.WriteLine($"Person is named {person.FirstName} {person.LastName}");
+            });
         }
     }
 }

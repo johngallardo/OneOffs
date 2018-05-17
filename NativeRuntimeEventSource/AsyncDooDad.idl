@@ -1,0 +1,20 @@
+namespace NativeRuntimeEventSource
+{
+    [default_interface]
+    runtimeclass Person
+    {
+        Person();
+        Person(String firstName, String lastName);
+        
+        String FirstName { get; set; };
+        String LastName { get; set; };
+    }
+    
+    [default_interface]
+    runtimeclass AsyncDooDad
+    {
+        AsyncDooDad();
+
+        Windows.Foundation.IAsyncOperation<Person> GetPersonAsync(String firstName, String lastName);
+    }
+}

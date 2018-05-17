@@ -90,15 +90,25 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AsyncDooDad.h">
+      <DependentUpon>AsyncDooDad.idl</DependentUpon>
+    </ClInclude>
+    <ClCompile Include="AsyncDooDad.cpp">
+      <DependentUpon>AsyncDooDad.idl</DependentUpon>
+    </ClCompile>
     <ClInclude Include="pch.h" />
     <ClInclude Include="ThreadpoolTimer.h" />
     <ClInclude Include="Timer.h">
       <DependentUpon>Timer.idl</DependentUpon>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="Person.h">
+      <DependentUpon>AsyncDooDad.idl</DependentUpon>
+    </ClInclude>
+    <ClCompile Include="Person.cpp">
+      <DependentUpon>AsyncDooDad.idl</DependentUpon>
     </ClCompile>
     <ClCompile Include="ThreadpoolTimer.cpp" />
     <ClCompile Include="Timer.cpp">
@@ -107,6 +117,7 @@
     <ClCompile Include="Generated Files\module.g.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Midl Include="AsyncDooDad.idl" />
     <Midl Include="Timer.idl" />
   </ItemGroup>
   <ItemGroup>

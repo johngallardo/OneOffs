@@ -12,6 +12,7 @@
             <StackPanel Orientation="Horizontal">
                 <Button Click="Button_Click" Margin="12">Native Runtime Timer</Button>
                 <Button Click="Button_Click_1">Force GC</Button>
+                <Button Click="Button_Click_2">Async Call</Button>
             </StackPanel>
             <TextBlock Name="Signal"></TextBlock>
         </StackPanel>

@@ -16,11 +16,15 @@
     </ClCompile>
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="ThreadpoolTimer.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="AsyncDooDad.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="ThreadpoolTimer.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="AsyncDooDad.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NativeRuntimeEventSource.def" />
@@ -30,5 +34,6 @@
   </ItemGroup>
   <ItemGroup>
     <Midl Include="Timer.idl" />
+    <Midl Include="AsyncDooDad.idl" />
   </ItemGroup>
 </Project>
